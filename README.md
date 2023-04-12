@@ -34,7 +34,8 @@ You will need to run it with `sudo` because it will copy the libimobiledevice fi
 
 Downloads directory will be at `./libimobiledevice-quickinstall-tmp`. This directory will be cleaned before and after the script is run.
 
-First, it will download `libimobiledevice`, `libplist`, `libusbmuxd`, and `libimobiledevice-glue` from GitHub Actions using [nightly.link](https://nightly.link).
+First, it will download `libimobiledevice`, `libplist`, `libusbmuxd`, and `libimobiledevice-glue` from GitHub Actions using [nightly.link](https://nightly.link). (it will also download `usbmuxd` on
+linux)
 
 Next, it will extract the downloaded zips.
 
