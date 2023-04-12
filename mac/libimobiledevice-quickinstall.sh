@@ -51,6 +51,7 @@ done
 install () {
   echo
 
+  mkdir -p /usr/local/"$1"/
   for FILE in ./usr/local/"$1"/*; do
     ldid "$FILE" 2> /dev/null || true
     USR_LOCAL_FILE="/usr/local/$1/$(basename "$FILE")"
