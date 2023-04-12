@@ -1,0 +1,6 @@
+*
+!README.md
+!.gitignore
+!linux/
+!mac/
+!**/libimobiledevice-quickinstall.sh
