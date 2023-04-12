@@ -1,16 +1,31 @@
 # libimobiledevice-quickinstall
 
-A bash script to quickly install libimobiledevice on macOS using binaries built by GitHub Actions.
+A bash script to quickly install libimobiledevice on macOS and Linux using binaries built by GitHub Actions.
 
 ## Usage
 
-First, ensure you have installed [Homebrew](https://brew.sh). Then, download and run [libimobiledevice-quickinstall.sh](./libimobiledevice-quickinstall.sh) with `sudo` (example:
+## macOS
+
+First, ensure you have installed [Homebrew](https://brew.sh). Then, download and run [mac/libimobiledevice-quickinstall.sh](./mac/libimobiledevice-quickinstall.sh) with `sudo` (example:
 `sudo bash ./libimobiledevice-quickinstall.sh`).
 
 If you have `wget` installed (either by Homebrew or Xcode CLI tools), you can use this one liner to download and run the script.
 
 ```bash
-wget https://github.com/naturecodevoid/libimobiledevice-quickinstall/raw/main/libimobiledevice-quickinstall.sh && sudo bash ./libimobiledevice-quickinstall.sh
+wget https://github.com/naturecodevoid/libimobiledevice-quickinstall/raw/main/mac/libimobiledevice-quickinstall.sh && sudo bash ./libimobiledevice-quickinstall.sh
+```
+
+You will need to run it with `sudo` because it will copy the libimobiledevice files to `/usr/local/`.
+
+## Linux
+
+Make sure you have `wget` installed. Then, download and run [linux/libimobiledevice-quickinstall.sh](./linux/libimobiledevice-quickinstall.sh) with `sudo` (example:
+`sudo bash ./libimobiledevice-quickinstall.sh`).
+
+You can use this one liner to download and run the script.
+
+```bash
+wget https://github.com/naturecodevoid/libimobiledevice-quickinstall/raw/main/linux/libimobiledevice-quickinstall.sh && sudo bash ./libimobiledevice-quickinstall.sh
 ```
 
 You will need to run it with `sudo` because it will copy the libimobiledevice files to `/usr/local/`.
