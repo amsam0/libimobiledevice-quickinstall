@@ -22,6 +22,7 @@ DOWNLOADS=(
   libplist
   libusbmuxd
   libimobiledevice-glue
+  usbmuxd
 )
 
 echo
