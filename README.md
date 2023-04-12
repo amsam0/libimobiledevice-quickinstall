@@ -39,5 +39,5 @@ linux)
 
 Next, it will extract the downloaded zips.
 
-Finally, it will go through the `bin`, `lib`, `share` and `include` folders in `libimobiledevice-quickinstall-tmp/usr/local`. It will attempt to run `ldid` on each file and then copy everything to
-`/usr/local/`. It will also make every file an executable.
+Finally, it will go through the `bin`, `lib`, `share` and `include` folders in `libimobiledevice-quickinstall-tmp/usr/local`. If you are on mac, it will attempt to run `ldid` on each file. It will
+then copy everything to `/usr/local/`. It will also make every file an executable.
